@@ -1,0 +1,12 @@
+{
+  "marked": {
+    "version": "17.0.5",
+    "file": "marked.cjs",
+    "sha256": "0db7abc826b5ac76f6ed11951ae34074ba50438ce6ea8d52889203779e5cbbad"
+  },
+  "dompurify": {
+    "version": "3.4.16",
+    "file": "purify.cjs",
+    "sha256": "2c90a9b46d6463f26038a29b686e82bc91de01fdac9d5229e7cfe3b360134ea2"
+  }
+}

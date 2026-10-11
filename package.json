@@ -1,0 +1,14 @@
+{
+  "name": "lapiscv-skill",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LapisCV-SKILL: AI-assisted resumes with a local browser preview",
+  "type": "module",
+  "license": "GPL-3.0-only",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "render": "node scripts/render.mjs"
+  }
+}

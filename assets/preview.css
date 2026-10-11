@@ -1,0 +1,50 @@
+/* SPDX-License-Identifier: GPL-3.0-only */
+html { background:#edf1f4; color:#283b48; font:14px/1.6 system-ui,sans-serif; }
+body { margin:0 !important; padding:0 !important; width:auto !important; box-shadow:none !important; background:transparent !important; }
+.preview-toolbar { display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; padding:16px 24px; background:#fff; border-bottom:1px solid #d8e2e9; }
+.preview-brand { font-weight:600; font-size:17px; }
+.preview-actions { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.preview-actions button,.preview-actions select { font:inherit; min-height:40px; padding:8px 12px; color:#375466; background:#f5f8fa; border:1px solid #ccdbe5; border-radius:7px; cursor:pointer; }
+.preview-actions button:hover { background:#e7eef4; }
+.preview-actions button:disabled { opacity:.5; cursor:wait; }
+.preview-actions .primary-action { background:#426c88; color:#fff; border-color:#426c88; }
+.preview-actions .primary-action:hover { background:#34566d; }
+.preview-actions button:focus-visible,.preview-actions select:focus-visible { outline:2px solid #426c88; outline-offset:2px; }
+.theme-control { display:flex; align-items:center; gap:6px; }
+.preview-help,#feedback { font:14px/1.6 system-ui,sans-serif; color:#597080; text-align:center; margin:12px 16px; }
+#feedback[data-error=true] { color:#a13f3f; }
+.preview-viewport { margin:20px auto; width:calc(100% - 32px); max-width:210mm; }
+#preview-size { position:relative; }
+#resume-pages { box-sizing:border-box; width:210mm; margin:0 !important; padding:0 !important; box-shadow:none !important; --vscode-editor-background:#fff; --text-normal:#353a42 !important; --text-strong:#353a42 !important; --avatar-width:29mm !important; background:transparent; color:#353a42; transform-origin:top left; }
+#resume-pages.theme-serif { --text-strong:#121418 !important; }
+.resume-page { box-sizing:border-box; position:relative; width:210mm; height:297mm; padding:13mm 15mm; margin:0 0 6mm; background:#fff; box-shadow:0 2px 14px #273f4d16; }
+.resume-page:last-child { margin-bottom:0; }
+.page-content { display:flow-root; }
+.resume-header { position:relative; }
+.resume-header.has-avatar { padding-right:35mm; min-height:29mm; }
+.photo-frame { position:absolute; right:0; top:0; width:29mm; height:29mm; }
+#resume-pages .photo-frame .avatar { display:block; position:static; float:none; top:auto; right:auto; width:100%; height:100%; margin:0 !important; box-sizing:border-box; object-fit:cover; border-radius:50%; }
+#resume-pages .entry-title { align-items:flex-start; gap:4mm; }
+#resume-pages .entry-title h3 { flex:1; min-width:0; }
+#resume-pages .entry-title > p,#resume-pages .entry-title > a { flex:0 1 auto; max-width:65mm; text-align:right; }
+#resume-pages h1,#resume-pages h2,#resume-pages h3,#resume-pages p,#resume-pages li,#resume-pages a { overflow-wrap:anywhere; }
+#resume-pages .icon { font-family:'LapisCV Icon',var(--text-font); }
+#resume-pages .pagination-continuation { margin-top:0 !important; text-indent:0 !important; }
+#resume-pages li.pagination-continuation { list-style:none; }
+#resume-pages hr { display:none; }
+.preview-footer { margin:24px auto; max-width:900px; padding:0 20px 24px; color:#667d8d; text-align:center; }
+.preview-footer p { font:12px/1.6 system-ui,sans-serif; color:inherit; }
+.license-notices { margin-top:12px; font-size:12px; }
+.license-notices summary { cursor:pointer; }
+.license-notices pre { text-align:left; white-space:pre-wrap; overflow-wrap:anywhere; max-height:300px; overflow:auto; background:#fff; padding:16px; }
+[hidden] { display:none !important; }
+@media(max-width:600px) { .preview-toolbar { padding:14px 16px; gap:10px; } .preview-actions { width:100%; } .preview-actions button,.preview-actions select { min-height:44px; } .preview-actions .primary-action { margin-left:auto; } }
+@page { size:A4 portrait; margin:0; }
+@media print {
+ html,body { margin:0 !important; padding:0 !important; background:#fff !important; width:210mm !important; print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+ .preview-toolbar,.preview-help,#feedback,.preview-footer,noscript { display:none !important; }
+ .preview-viewport,#preview-size { width:210mm !important; max-width:none; height:auto !important; margin:0 !important; padding:0 !important; }
+ #resume-pages { transform:none !important; width:210mm; }
+ .resume-page { height:296mm; margin:0; box-shadow:none; break-after:page; page-break-after:always; }
+ .resume-page:last-child { break-after:auto; page-break-after:auto; }
+}

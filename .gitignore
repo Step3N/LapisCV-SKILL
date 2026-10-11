@@ -1,0 +1,13 @@
+# Local files and development dependencies
+.DS_Store
+Thumbs.db
+node_modules/
+logs/
+*.log
+*.tmp
+
+# Generated previews and personal resume files
+output/
+/resume.md
+/resume.html
+*.pdf

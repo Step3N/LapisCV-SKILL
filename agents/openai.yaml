@@ -1,0 +1,4 @@
+interface:
+  display_name: "LapisCV-SKILL"
+  short_description: "用对话优化简历，套用 LapisCV 样式，本地预览后自行添加照片并导出 PDF"
+  default_prompt: "使用 $lapiscv-skill，根据我的资料优化简历，并在浏览器打开 LapisCV 样式预览。"
